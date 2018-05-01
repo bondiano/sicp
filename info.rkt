@@ -11,7 +11,7 @@
 
 #| (define primary-file "main.rkt") |#
 #| (define categories '(net)) |#
-(define homepage "https://github.com/Hexlet/sicp-racket-boilerplate")
+(define homepage "https://github.com/bondiano/sicp")
 #| (define version "1.3") |#
 #| (define required-core-version "5.2") |#
 #| (define repositories |#

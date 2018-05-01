@@ -6,7 +6,7 @@ This repository contains my solutions of exercises from the book.
 
 [Official SICP website](https://mitpress.mit.edu/sicp) · [Read online](http://sarabander.github.io/sicp/)
 
-![Book cover](images/cover.jpg)
+![Book cover](http://xahlee.info/UnixResource_dir/gki/Structure_and_Interpretation_of_Computer_Programs.jpg)
 
 ## Sicp Racket Boilerplate
 

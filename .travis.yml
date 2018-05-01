@@ -12,4 +12,4 @@ before_install:
   - export PATH="${RACKET_DIR}/bin:${PATH}" #install-racket.sh can't set for us
 
 script:
-  - raco test solutions
+  - raco test sicp

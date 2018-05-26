@@ -11,7 +11,7 @@ This repository contains my solutions of exercises from the book.
 ## Table of contents
 
 - [Chapter 1. Building Abstractions with Procedures](./sicp/chapter_01)
-  - [1.1 The Elements of Programming](./solutions/chapter_01/1_the_elements_of_programming)
+  - [1.1 The Elements of Programming](./sicp/chapter_01/1_the_elements_of_programming)
 
 ## Sicp Racket Boilerplate
 

@@ -7,4 +7,10 @@
     (+ 5 4 (- 2 (- 3 (+ 6 (/ 4 5))))) 
     (* 3 (- 6 2) (- 2 7))))
 
-(check-equal? solution -37/150)
+(module+ test
+  (require rackunit)
+  (test-case
+    "1_03"
+    (check-equal? solution -37/150)
+  )
+)

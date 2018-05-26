@@ -8,6 +8,11 @@ This repository contains my solutions of exercises from the book.
 
 ![Book cover](http://xahlee.info/UnixResource_dir/gki/Structure_and_Interpretation_of_Computer_Programs.jpg)
 
+## Table of contents
+
+- [Chapter 1. Building Abstractions with Procedures](./sicp/chapter_01)
+  - [1.1 The Elements of Programming](./solutions/chapter_01/1_the_elements_of_programming)
+
 ## Sicp Racket Boilerplate
 
 ### Requirements

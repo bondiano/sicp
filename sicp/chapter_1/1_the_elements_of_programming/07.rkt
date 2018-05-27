@@ -40,6 +40,7 @@
   (require rackunit)
   (test-case
     "1_07"
+      (check-equal? (round (better-sqrt 1)) 1.0)
       (check-equal? (round (better-sqrt 4)) 2.0)
       (check-equal? (round (better-sqrt 9)) 3.0)
       (check-equal? (round (better-sqrt 16)) 4.0)

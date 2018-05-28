@@ -10,7 +10,7 @@
 (module+ test
   (require rackunit)
   (test-case
-    "1_03"
+    "1_02"
     (check-equal? solution -37/150)
   )
 )

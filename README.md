@@ -13,6 +13,7 @@ This repository contains my solutions of exercises from the book.
 - [Chapter 1. Building Abstractions with Procedures](./sicp/chapter_1)
   - [1.1 The Elements of Programming](./sicp/chapter_1/1_the_elements_of_programming)
   - [1.2 Procedures and the Processes They Generate](./sicp/chapter_1/2_procedures_and_the_processes_they_generate)
+  - [1.3 Formulating Abstractions with Higher-Order Procedures](./sicp/chapter_1/3_formulating_abstractionswith_higher-order_procedures)
 
 ## Sicp Racket Boilerplate
 

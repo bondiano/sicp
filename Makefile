@@ -1,4 +1,7 @@
-test:
+test-all:
 	raco test sicp
 
-.PHONY: test
+test:
+	raco test $(dir)
+
+.PHONY: test, test-all

@@ -1,6 +1,6 @@
 #lang racket/base
 
-(define (runtime) (current-milliseconds)) 
+(define (runtime) (current-milliseconds))
 
 (define (search-for-primes n count)
     (define (search-for-primes-iter cur prime-count)

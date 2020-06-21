@@ -1,6 +1,6 @@
 #lang racket/base
 
-(define (dec val) 
+(define (dec val)
   (- val 1))
 
 (define (inc val)
@@ -29,7 +29,7 @@
   b
   (i (dec a) (inc b))))
 
-(i 4 5) 
+(i 4 5)
 ; (+ 4 5)
 ; (+ 3 6)
 ; (+ 2 7)

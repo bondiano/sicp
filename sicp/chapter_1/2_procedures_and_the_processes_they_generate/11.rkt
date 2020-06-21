@@ -1,7 +1,7 @@
 #lang racket/base
 
 (define (f-rec n)
-    (if (< n 3) 
+    (if (< n 3)
         n
         (+ (f-rec (- n 1)) (f-rec (- n 2)) (f-rec (- n  3)))))
 
@@ -10,7 +10,7 @@
         (if (= counter n)
             last
             (iter (+ last perv perv-perv) last perv (+ counter 1))))
-    (if (< n 3) 
+    (if (< n 3)
         n
         (iter 3 2 1 3)))
 

@@ -3,7 +3,7 @@
 (define (even? n)
     (= (remainder n 2) 0))
 
-(define (square n) 
+(define (square n)
     (* n n))
 
 (define (fast-expt-rec b n)
@@ -11,7 +11,7 @@
           ((even? n) (square (fast-expt-rec b (/ n 2))))
             (else (* b (fast-expt-rec b (- n 1))))))
 
-(define (fast-expt-iter b n invariant) 
+(define (fast-expt-iter b n invariant)
     (cond ((= n 0) invariant)
           ((even? n) (fast-expt-iter (square b) (/ n 2) invariant))
           ((fast-expt-iter b (- n 1) (* b invariant)))))

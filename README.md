@@ -1,12 +1,12 @@
 # Structure and Interpretation of Computer Programs
 
-[![Build Status](https://travis-ci.org/bondiano/sicp.svg?branch=master)](https://travis-ci.org/bondiano/sicp)
+[![github action status](https://github.com/hexlet-boilerplates/sicp-racket/workflows/Racket%20CI/badge.svg)](https://github.com/hexlet-boilerplates/sicp-racket/actions)
 
-This repository contains my solutions of exercises from the book.
+This repository contains my solutions of exercises from the book. Almost of solutions has exploration and comments on russian language.
 
 [Official SICP website](https://mitpress.mit.edu/sicp) · [Read online](http://sarabander.github.io/sicp/)
 
-![Book cover](http://xahlee.info/UnixResource_dir/gki/Structure_and_Interpretation_of_Computer_Programs.jpg)
+![Book cover](./image/cover.jpg)
 
 ## Table of contents
 
@@ -21,10 +21,12 @@ This repository contains my solutions of exercises from the book.
 
 * Racket
 * Rackunit (`raco pkg install rackunit`)
+* [SICP Support for DrRacket](https://docs.racket-lang.org/sicp-manual/index.html) (`raco pkg install sicp`)
 * Make
 
 ### Using
 
 1. Copy content of this repo (not clone!) to your repository
-1. Write code (look `sicp/chapter1/02.rkt`)
-1. Run tests `make test`
+2. Write code (look `sicp/chapter1/02.rkt`)
+3. Run tests `make test`
+4. Run linter `make lint`

@@ -1,7 +1,12 @@
-test-all:
-	raco test sicp
+install:
+	raco pkg install sicp
+	raco pkg install review
 
 test:
-	raco test $(dir)
+	raco test sicp
 
-.PHONY: test, test-all
+lint:
+	@echo "check codestyle"
+	@(for f in $$(find sicp -name '*.rkt'); do raco review $$f; done)
+
+.PHONY: test

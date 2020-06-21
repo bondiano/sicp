@@ -1,6 +1,6 @@
 #lang racket/base
 
-(define (pascal-triangle row column) 
+(define (pascal-triangle row column)
     (cond ((> column row) 0)
         ((< column 0) 0)
         ((= column 1) 1)

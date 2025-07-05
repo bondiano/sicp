@@ -13,7 +13,7 @@
     (+ (square first) (square second) (square third)))
 
 (define (sum-of-two-greater-squares first second third)
-    (- 
+    (-
         (sum-of-three-squares first second third)
         (square (smallest-of-three first second third))))
 
@@ -40,6 +40,4 @@
     ; sum-of-two-greater-squares
     (check-equal? (sum-of-two-greater-squares 1 2 3) 13)
     (check-equal? (sum-of-two-greater-squares 5 4 1) 41) ; 25+16
-    (check-equal? (sum-of-two-greater-squares 10 5 2) 125) 
-  )
-)
+    (check-equal? (sum-of-two-greater-squares 10 5 2) 125)))

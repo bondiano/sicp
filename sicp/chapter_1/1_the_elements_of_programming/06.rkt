@@ -1,8 +1,9 @@
-#lang racket/base
+#lang racket
 
 (define (new-if predicate then-clause else-clause)
-  (cond (predicate then-clause)
-      (else else-clause)))
+  (cond
+    [predicate then-clause]
+    [else else-clause]))
 
 (new-if (= 2 3) 0 5)
 ; 5
@@ -22,13 +23,27 @@
 (define (good-enough? guess x)
   (< (abs (- (square guess) x)) 0.001))
 
-(define (sqrt-iter guess x)
-  (new-if (good-enough? guess x)
-  guess
-  (sqrt-iter (improve guess x)
-    x)))
+;; sum(sum(sum 123))
+;; (sum (sum (sum 123)))
+;; ((compose sum sum sum) 123)
+;; (compose(sum, sum, sum))(123)
+;; (-> 123 sum sum sum)
+;;
+;; let x = if x > 1 {
+;;  a + 1
+;; } else { 1 };
+;;
 
-(define (sqrt x)
+(define x 1)
+
+(set! x (+ x 10))
+
+(+ x x)
+
+(define (sqrt-iter guess x)
+  (new-if (good-enough? guess x) guess (sqrt-iter (improve guess x) x)))
+
+(define [sqrt x]
   (sqrt-iter 1.0 x))
 
 ; Из-за аппликативного порядка вычислений Lisp интерпретатор сперва попробует вычислить аргументы, перед тем, как выполнить процедуру
